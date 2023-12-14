@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Moetsy Mayette</h1>
+        <p>Web Developer 🎓</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <!-- Add an image of yourself -->
+        <img src="file:///Users/moetsy/Desktop/school%20%F0%9F%8E%93/IMG_5536.PNG" alt="Moetsy Mayette" style="width: 200px; height: 200px; border-radius: 50%;">
+        <p>Young professional pursuing a degree in computer science, with a strong desire to learn and develop skills as a future data analyst. Background in technology and a proven track record contributing to collaborative projects. Committed to using technology to solve complex problems and make a positive impact on individuals, particularly those with disadvantaged backgrounds.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <!-- Add your projects here -->
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at: moetsymayette7@gmail.com or (561)-293-1347</p>
+    </section>
+
+    <footer>
+        &copy; 2023 Your Portfolio
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
